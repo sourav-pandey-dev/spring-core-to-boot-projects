@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "E1" class="org.sourav.PetrolEngine">
+        <property name="type" value="petrol"/>
+        <property name="milage" value="50" />
+        <property name="model" value="new tata seara" />
+     </bean>
+    <bean id = "E2" class="org.sourav.DiselEngine">
+        <property name="type" value="disel" />
+        <property name="milage" value="60" />
+        <property name="model" value="scarpio" />
+    </bean>
+    <bean id = "C1" class="org.sourav.Car">
+        <property name="engine" ref="E1"/>
+        <property name="seats" value="4"/>
+        <property name="distance" value="38240" />
+    </bean>
+    <bean id = "C2" class="org.sourav.Car">
+        <property name="engine" ref="E2"/>
+        <property name="seats" value="7"/>
+        <property name="distance" value="24661" />
+    </bean>
+
+</beans>
