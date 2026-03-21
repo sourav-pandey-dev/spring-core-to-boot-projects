@@ -1,0 +1,30 @@
+# IDE
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Build
+target/
+out/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.swp
+
+# Binary / artifacts
+*.jar
+*.war
+
+# Maven wrapper (optional keep/remove based on usage)
+!.mvn/wrapper/maven-wrapper.jar
